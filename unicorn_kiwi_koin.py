@@ -24,15 +24,3 @@ def funct(a, total, number_of_unicorns):
     total -= _sum
     a[0] = total
     return a
-
-
-if __name__ == '__main__':
-    args = sys.argv[1:]
-    if len(args) == 0:
-        print("Please enter a list of numbers to sort")
-        sys.exit(1)
-    passed_args = [x for x in args]
-    unicorn, total = passed_args[0], passed_args[1]
-    unicorn = int(unicorn)
-    total = int(total)
-    print(funct([0] * unicorn, total, unicorn))
